@@ -6,6 +6,4 @@
 //  Copyright (c) 2014年 TCTONY. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-#import <TCTDEVLIB/View/UIView+TCTAddtion.h>
+#import <TCTDEVLIB/UIView+TCTAddtion.h>

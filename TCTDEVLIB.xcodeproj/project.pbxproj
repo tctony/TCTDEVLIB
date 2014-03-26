@@ -7,26 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA1F312518E2582F008E7AE4 /* UIView+TCTAddtion.h in Copy Files */ = {isa = PBXBuildFile; fileRef = EA9DCBFB18E0EC1300B6C099 /* UIView+TCTAddtion.h */; };
 		EA9DCBD518E0EB8200B6C099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBD418E0EB8200B6C099 /* Foundation.framework */; };
 		EA9DCBDA18E0EB8200B6C099 /* TCTDEVLIB.h in Copy Files */ = {isa = PBXBuildFile; fileRef = EA9DCBD918E0EB8200B6C099 /* TCTDEVLIB.h */; };
-		EA9DCBE318E0EB8200B6C099 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBE218E0EB8200B6C099 /* XCTest.framework */; };
-		EA9DCBE418E0EB8200B6C099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBD418E0EB8200B6C099 /* Foundation.framework */; };
-		EA9DCBE918E0EB8300B6C099 /* libTCTDEVLIB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBD118E0EB8200B6C099 /* libTCTDEVLIB.a */; };
-		EA9DCBEF18E0EB8300B6C099 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA9DCBED18E0EB8300B6C099 /* InfoPlist.strings */; };
-		EA9DCBF118E0EB8300B6C099 /* TCTDEVLIBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9DCBF018E0EB8300B6C099 /* TCTDEVLIBTests.m */; };
 		EA9DCBFD18E0EC1300B6C099 /* UIView+TCTAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9DCBFC18E0EC1300B6C099 /* UIView+TCTAddtion.m */; };
 		EA9DCBFF18E0EC6C00B6C099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		EA9DCBE718E0EB8300B6C099 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EA9DCBC918E0EB8200B6C099 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA9DCBD018E0EB8200B6C099;
-			remoteInfo = TCTDEVLIB;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		EA9DCBCF18E0EB8200B6C099 /* Copy Files */ = {
@@ -35,6 +21,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				EA1F312518E2582F008E7AE4 /* UIView+TCTAddtion.h in Copy Files */,
 				EA9DCBDA18E0EB8200B6C099 /* TCTDEVLIB.h in Copy Files */,
 			);
 			name = "Copy Files";
@@ -47,11 +34,6 @@
 		EA9DCBD418E0EB8200B6C099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA9DCBD818E0EB8200B6C099 /* TCTDEVLIB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCTDEVLIB-Prefix.pch"; sourceTree = "<group>"; };
 		EA9DCBD918E0EB8200B6C099 /* TCTDEVLIB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCTDEVLIB.h; sourceTree = "<group>"; };
-		EA9DCBE118E0EB8200B6C099 /* TCTDEVLIBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCTDEVLIBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA9DCBE218E0EB8200B6C099 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		EA9DCBEC18E0EB8300B6C099 /* TCTDEVLIBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TCTDEVLIBTests-Info.plist"; sourceTree = "<group>"; };
-		EA9DCBEE18E0EB8300B6C099 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EA9DCBF018E0EB8300B6C099 /* TCTDEVLIBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCTDEVLIBTests.m; sourceTree = "<group>"; };
 		EA9DCBFB18E0EC1300B6C099 /* UIView+TCTAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TCTAddtion.h"; sourceTree = "<group>"; };
 		EA9DCBFC18E0EC1300B6C099 /* UIView+TCTAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TCTAddtion.m"; sourceTree = "<group>"; };
 		EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -67,16 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA9DCBDE18E0EB8200B6C099 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA9DCBE318E0EB8200B6C099 /* XCTest.framework in Frameworks */,
-				EA9DCBE918E0EB8300B6C099 /* libTCTDEVLIB.a in Frameworks */,
-				EA9DCBE418E0EB8200B6C099 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				EA9DCBD618E0EB8200B6C099 /* TCTDEVLIB */,
-				EA9DCBEA18E0EB8300B6C099 /* TCTDEVLIBTests */,
 				EA9DCBD318E0EB8200B6C099 /* Frameworks */,
 				EA9DCBD218E0EB8200B6C099 /* Products */,
 			);
@@ -94,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				EA9DCBD118E0EB8200B6C099 /* libTCTDEVLIB.a */,
-				EA9DCBE118E0EB8200B6C099 /* TCTDEVLIBTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +74,6 @@
 			children = (
 				EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */,
 				EA9DCBD418E0EB8200B6C099 /* Foundation.framework */,
-				EA9DCBE218E0EB8200B6C099 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,24 +92,6 @@
 			children = (
 				EA9DCBD918E0EB8200B6C099 /* TCTDEVLIB.h */,
 				EA9DCBD818E0EB8200B6C099 /* TCTDEVLIB-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EA9DCBEA18E0EB8300B6C099 /* TCTDEVLIBTests */ = {
-			isa = PBXGroup;
-			children = (
-				EA9DCBF018E0EB8300B6C099 /* TCTDEVLIBTests.m */,
-				EA9DCBEB18E0EB8300B6C099 /* Supporting Files */,
-			);
-			path = TCTDEVLIBTests;
-			sourceTree = "<group>";
-		};
-		EA9DCBEB18E0EB8300B6C099 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EA9DCBEC18E0EB8300B6C099 /* TCTDEVLIBTests-Info.plist */,
-				EA9DCBED18E0EB8300B6C099 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -175,24 +126,6 @@
 			productReference = EA9DCBD118E0EB8200B6C099 /* libTCTDEVLIB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		EA9DCBE018E0EB8200B6C099 /* TCTDEVLIBTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA9DCBF718E0EB8300B6C099 /* Build configuration list for PBXNativeTarget "TCTDEVLIBTests" */;
-			buildPhases = (
-				EA9DCBDD18E0EB8200B6C099 /* Sources */,
-				EA9DCBDE18E0EB8200B6C099 /* Frameworks */,
-				EA9DCBDF18E0EB8200B6C099 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EA9DCBE818E0EB8300B6C099 /* PBXTargetDependency */,
-			);
-			name = TCTDEVLIBTests;
-			productName = TCTDEVLIBTests;
-			productReference = EA9DCBE118E0EB8200B6C099 /* TCTDEVLIBTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,21 +148,9 @@
 			projectRoot = "";
 			targets = (
 				EA9DCBD018E0EB8200B6C099 /* TCTDEVLIB */,
-				EA9DCBE018E0EB8200B6C099 /* TCTDEVLIBTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		EA9DCBDF18E0EB8200B6C099 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA9DCBEF18E0EB8300B6C099 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA9DCBCD18E0EB8200B6C099 /* Sources */ = {
@@ -240,34 +161,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA9DCBDD18E0EB8200B6C099 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA9DCBF118E0EB8300B6C099 /* TCTDEVLIBTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EA9DCBE818E0EB8300B6C099 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EA9DCBD018E0EB8200B6C099 /* TCTDEVLIB */;
-			targetProxy = EA9DCBE718E0EB8300B6C099 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		EA9DCBED18E0EB8300B6C099 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA9DCBEE18E0EB8300B6C099 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EA9DCBF218E0EB8300B6C099 /* Debug */ = {
@@ -366,44 +260,6 @@
 			};
 			name = Release;
 		};
-		EA9DCBF818E0EB8300B6C099 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TCTDEVLIB/TCTDEVLIB-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TCTDEVLIBTests/TCTDEVLIBTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		EA9DCBF918E0EB8300B6C099 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TCTDEVLIB/TCTDEVLIB-Prefix.pch";
-				INFOPLIST_FILE = "TCTDEVLIBTests/TCTDEVLIBTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -421,15 +277,6 @@
 			buildConfigurations = (
 				EA9DCBF518E0EB8300B6C099 /* Debug */,
 				EA9DCBF618E0EB8300B6C099 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA9DCBF718E0EB8300B6C099 /* Build configuration list for PBXNativeTarget "TCTDEVLIBTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA9DCBF818E0EB8300B6C099 /* Debug */,
-				EA9DCBF918E0EB8300B6C099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
