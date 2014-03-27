@@ -104,4 +104,24 @@ CG_INLINE NSString *tct_logShortPath(const char *path)
     }
 }
 
++ (void)logError:(NSError *)error recursive:(BOOL)recursive file:(const char *)f line:(int)l method:(const char *)m
+{
+    if (error) {
+        NSMutableString *message = [[NSMutableString alloc] init];
+        
+        [message appendFormat:@"NS_ERROR!! %@ %@", [error localizedDescription], [error localizedFailureReason]];
+        
+        if (recursive) {
+            while (error) {
+                error = [[error userInfo] objectForKey:NSUnderlyingErrorKey];
+                if (error) {
+                    [message appendFormat:@"\n\t %@ %@", [error localizedDescription], [error localizedFailureReason]];
+                }
+            }
+        }
+        
+        [TCTLogUtils log:kTCTLogLevelError message:message];
+    }
+}
+
 @end
