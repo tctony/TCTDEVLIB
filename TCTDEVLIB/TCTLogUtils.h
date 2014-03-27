@@ -44,6 +44,9 @@ typedef NS_OPTIONS(NSInteger, TCTLogLevel) {
 #define TCT_ASSERT(condition, format, ...) [TCTLogUtils logAssert:(condition) statement:#condition file:__FILE__ line:__LINE__ method:__FUNCTION__ messageFormat:(format), ##__VA_ARGS__]
 #endif // end of if TCT_ENABLE_ASSERT
 
+#define TCT_ASSERT_MAIN_THREAD() TCT_ASSERT([NSThread isMainThread], @"current thread: %@, stacktrace: %@", [NSThread currentThread], [NSThread callStackSymbols])
+#define TCT_ASSERT_NOT_MAIN_THREAD() TCT_ASSERT(![NSThread isMainThread], @"current thread: %@, stacktrace: %@", [NSThread currentThread], [NSThread callStackSymbols])
+
 #define TCT_NS_ERROR(error) [TCTLogUtils logError:(error) recursive:YES file:__FILE__ line:__LINE__ method:(char *)__FUNCTION__]
 
 @interface TCTLogUtils : NSObject
