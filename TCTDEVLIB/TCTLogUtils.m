@@ -8,7 +8,7 @@
 
 #import "TCTLogUtils.h"
 
-CG_INLINE NSString *tct_logLevelString(TCTLogLevel level)
+static inline NSString *tct_logLevelString(TCTLogLevel level)
 {
     NSString *levelString = @"";
     switch (level) {
@@ -34,7 +34,7 @@ CG_INLINE NSString *tct_logLevelString(TCTLogLevel level)
     return levelString;
 }
 
-CG_INLINE NSString *tct_logShortPath(const char *path)
+static inline NSString *tct_logShortPath(const char *path)
 {
     if (!path) { return @""; }
     return [[[NSString alloc] initWithBytes:path length:strlen(path) encoding:NSUTF8StringEncoding] lastPathComponent];
