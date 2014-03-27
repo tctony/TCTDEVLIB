@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA1F312518E2582F008E7AE4 /* UIView+TCTAddtion.h in Copy Files */ = {isa = PBXBuildFile; fileRef = EA9DCBFB18E0EC1300B6C099 /* UIView+TCTAddtion.h */; };
+		4CF892DA18E3EF30008ECC99 /* UIKit+TCTAddtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF892D918E3EF30008ECC99 /* UIKit+TCTAddtions.m */; };
+		4CF892DD18E3F2CB008ECC99 /* TCTLogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF892DC18E3F2CB008ECC99 /* TCTLogUtils.m */; };
 		EA9DCBD518E0EB8200B6C099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBD418E0EB8200B6C099 /* Foundation.framework */; };
 		EA9DCBDA18E0EB8200B6C099 /* TCTDEVLIB.h in Copy Files */ = {isa = PBXBuildFile; fileRef = EA9DCBD918E0EB8200B6C099 /* TCTDEVLIB.h */; };
-		EA9DCBFD18E0EC1300B6C099 /* UIView+TCTAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9DCBFC18E0EC1300B6C099 /* UIView+TCTAddtion.m */; };
 		EA9DCBFF18E0EC6C00B6C099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +21,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				EA1F312518E2582F008E7AE4 /* UIView+TCTAddtion.h in Copy Files */,
 				EA9DCBDA18E0EB8200B6C099 /* TCTDEVLIB.h in Copy Files */,
 			);
 			name = "Copy Files";
@@ -30,12 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4CF892D818E3EF30008ECC99 /* UIKit+TCTAddtions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+TCTAddtions.h"; sourceTree = "<group>"; };
+		4CF892D918E3EF30008ECC99 /* UIKit+TCTAddtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+TCTAddtions.m"; sourceTree = "<group>"; };
+		4CF892DB18E3F2CB008ECC99 /* TCTLogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTLogUtils.h; sourceTree = "<group>"; };
+		4CF892DC18E3F2CB008ECC99 /* TCTLogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTLogUtils.m; sourceTree = "<group>"; };
 		EA9DCBD118E0EB8200B6C099 /* libTCTDEVLIB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTCTDEVLIB.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9DCBD418E0EB8200B6C099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA9DCBD818E0EB8200B6C099 /* TCTDEVLIB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCTDEVLIB-Prefix.pch"; sourceTree = "<group>"; };
 		EA9DCBD918E0EB8200B6C099 /* TCTDEVLIB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCTDEVLIB.h; sourceTree = "<group>"; };
-		EA9DCBFB18E0EC1300B6C099 /* UIView+TCTAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TCTAddtion.h"; sourceTree = "<group>"; };
-		EA9DCBFC18E0EC1300B6C099 /* UIView+TCTAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TCTAddtion.m"; sourceTree = "<group>"; };
 		EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -82,7 +83,10 @@
 			isa = PBXGroup;
 			children = (
 				EA9DCBD718E0EB8200B6C099 /* Supporting Files */,
-				EA9DCC0018E0ECA200B6C099 /* View */,
+				4CF892DB18E3F2CB008ECC99 /* TCTLogUtils.h */,
+				4CF892DC18E3F2CB008ECC99 /* TCTLogUtils.m */,
+				4CF892D818E3EF30008ECC99 /* UIKit+TCTAddtions.h */,
+				4CF892D918E3EF30008ECC99 /* UIKit+TCTAddtions.m */,
 			);
 			path = TCTDEVLIB;
 			sourceTree = "<group>";
@@ -95,16 +99,6 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
-		};
-		EA9DCC0018E0ECA200B6C099 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				EA9DCBFB18E0EC1300B6C099 /* UIView+TCTAddtion.h */,
-				EA9DCBFC18E0EC1300B6C099 /* UIView+TCTAddtion.m */,
-			);
-			name = View;
-			path = TCTDEVLIB/View;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -157,7 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA9DCBFD18E0EC1300B6C099 /* UIView+TCTAddtion.m in Sources */,
+				4CF892DD18E3F2CB008ECC99 /* TCTLogUtils.m in Sources */,
+				4CF892DA18E3EF30008ECC99 /* UIKit+TCTAddtions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +191,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -228,7 +223,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

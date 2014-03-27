@@ -6,4 +6,7 @@
 //  Copyright (c) 2014年 TCTONY. All rights reserved.
 //
 
-#import <TCTDEVLIB/UIView+TCTAddtion.h>
+#define EMPTY_MACRO do {} while(0)
+
+#import <TCTDEVLIB/TCTLogUtils.h>
+#import <TCTDEVLIB/UIKit+TCTAddtions.h>

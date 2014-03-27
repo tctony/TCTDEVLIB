@@ -1,12 +1,16 @@
 //
-//  UIView+TCTAddtion.m
+//  UIKit+TCTAddtions.m
 //  TCTDEVLIB
 //
-//  Created by Tony Tang on 14-3-24.
-//  Copyright (c) 2014年 TCTONY. All rights reserved.
+//  Created by changtang on 3/27/14.
+//  Copyright (c) 2014 TCTONY. All rights reserved.
 //
 
-#import "UIView+TCTAddtion.h"
+#import "UIKit+TCTAddtions.h"
+
+@implementation UIWindow (TCTAddtions)
+
+@end
 
 @implementation UIView (TCTAddtion)
 
