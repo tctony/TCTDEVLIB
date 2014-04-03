@@ -31,6 +31,7 @@
 - (NSArray *)tct_subViewsOfClass:(Class)viewClass;
 
 - (UIView *)tct_snapshotView;
+- (UIImage *)tct_imageOfFrame:(CGRect)frame;
 
 - (UITapGestureRecognizer *)tct_addTapTarget:(id)target action:(SEL)selector;
 

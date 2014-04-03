@@ -84,6 +84,10 @@ messageFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(2, 3);
            method:(const char *)m
     messageFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(6, 7);
 
-+ (void)logError:(NSError *)error recursive:(BOOL)recursive file:(const char *)f line:(int)l method:(const char *)m;
++ (void)logError:(NSError *)error
+       recursive:(BOOL)recursive
+            file:(const char *)f
+            line:(int)l
+          method:(const char *)m;
 
 @end

@@ -169,8 +169,48 @@
 
 - (UIView *)tct_snapshotView
 {
-    // TODO
-    return nil;
+    UIView *snapshotView = nil;
+    
+    if ([self respondsToSelector:@selector(snapshotViewAfterScreenUpdates:)]) {
+        snapshotView = [self snapshotViewAfterScreenUpdates:NO];
+    }
+    else {
+        UIImage *snapshotImage = [self tct_imageOfFrame:self.bounds];
+        snapshotView = [[UIImageView alloc] initWithImage:snapshotImage];
+    }
+    
+    return snapshotView;
+}
+
+- (UIImage *)tct_imageOfFrame:(CGRect)frame
+{
+    CGRect rect = self.bounds;
+    
+    if (UIGraphicsBeginImageContextWithOptions != nil) {
+        UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    }
+    else {
+        UIGraphicsBeginImageContext(rect.size);
+    }
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    if ([self isKindOfClass:[UIScrollView class]]) {
+        UIScrollView *scrollView = (UIScrollView *)self;
+        CGContextTranslateCTM(context, -scrollView.contentOffset.x, -scrollView.contentOffset.y);
+    }
+    [self.layer renderInContext:context];
+    UIImage *snapImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    if (CGRectEqualToRect(rect, frame)) {
+        return snapImage;
+    }
+    else {
+        CGFloat scale = snapImage.scale;
+        CGRect cropRect = CGRectMake(CGRectGetMinX(frame)*scale, CGRectGetMinY(frame)*scale, CGRectGetWidth(frame)*scale, CGRectGetHeight(frame)*scale);
+        CGImageRef imageRef = CGImageCreateWithImageInRect(snapImage.CGImage, cropRect);
+        UIImage *img = [UIImage imageWithCGImage:imageRef scale:snapImage.scale orientation:snapImage.imageOrientation];
+        CGImageRelease(imageRef);
+        return img;
+    }
 }
 
 - (UITapGestureRecognizer *)tct_addTapTarget:(id)target action:(SEL)selector
