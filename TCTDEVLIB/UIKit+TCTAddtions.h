@@ -13,6 +13,7 @@
 
 @end
 
+
 @interface UIView (TCTAddtion)
 
 @property (nonatomic) CGFloat tct_left;
@@ -34,5 +35,19 @@
 - (UIImage *)tct_imageOfFrame:(CGRect)frame;
 
 - (UITapGestureRecognizer *)tct_addTapTarget:(id)target action:(SEL)selector;
+
+@end
+
+
+@interface UIGestureRecognizer (TCTAddtion)
+
+- (void)tct_cancel;
+
+@end
+
+
+@interface UITableViewCell (TCTAddtion)
+
++ (NSString *)tct_reuseIdentifier;
 
 @end

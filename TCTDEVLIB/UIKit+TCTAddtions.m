@@ -28,6 +28,7 @@
 
 @end
 
+
 @implementation UIView (TCTAddtion)
 
 - (CGFloat)tct_left
@@ -219,6 +220,30 @@
     [gesture addTarget:target action:selector];
     [self addGestureRecognizer:gesture];
     return gesture;
+}
+
+@end
+
+
+@implementation UIGestureRecognizer (TCTAddtion)
+
+- (void)tct_cancel
+{
+    if (self.enabled) {
+        //It's a documented behavior to cancel a gesture by resetting its enabled state
+        self.enabled = NO;
+        self.enabled = YES;
+    }
+}
+
+@end
+
+
+@implementation UITableViewCell (TCTAddtion)
+
++ (NSString *)tct_reuseIdentifier
+{
+    return [NSString stringWithFormat:@"%@Identifier", NSStringFromClass([self class])];
 }
 
 @end
