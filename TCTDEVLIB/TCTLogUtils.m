@@ -8,30 +8,30 @@
 
 #import "TCTLogUtils.h"
 
-static inline NSString *tct_logLevelString(TCTLogLevel level)
+static inline NSString *tct_logTypeString(TCTLogType type)
 {
-    NSString *levelString = @"";
-    switch (level) {
-        case kTCTLogLevelVerbose:
-            levelString = @"V";
+    NSString *typeString = @"";
+    switch (type) {
+        case kTCTLogTypeVerbose:
+            typeString = @"V";
             break;
-        case kTCTLogLevelDebug:
-            levelString = @"D";
+        case kTCTLogTypeDebug:
+            typeString = @"D";
             break;
-        case kTCTLogLevelInfo:
-            levelString = @"I";
+        case kTCTLogTypeInfo:
+            typeString = @"I";
             break;
-        case kTCTLogLevelWarn:
-            levelString = @"W";
+        case kTCTLogTypeWarn:
+            typeString = @"W";
             break;
-        case kTCTLogLevelError:
-            levelString = @"E";
+        case kTCTLogTypeError:
+            typeString = @"E";
             break;
         default:
-            NSLog(@"unknown log level");
+            NSLog(@"unknown log type");
             break;
     }
-    return levelString;
+    return typeString;
 }
 
 static inline NSString *tct_logShortPath(const char *path)
@@ -40,40 +40,51 @@ static inline NSString *tct_logShortPath(const char *path)
     return [[[NSString alloc] initWithBytes:path length:strlen(path) encoding:NSUTF8StringEncoding] lastPathComponent];
 }
 
+static TCTLogLevel logLevel = kTCTLogLevelVerbose;
+
 @interface TCTLogUtils ()
 
 @end
 
 @implementation TCTLogUtils
 
-+ (void)log:(TCTLogLevel)level message:(NSString *)message
++ (void)setLogLevel:(TCTLogLevel)level
 {
-    NSLog(@"[%@]: %@", tct_logLevelString(level), message);
+    logLevel = level;
 }
 
-+ (void)log:(TCTLogLevel)level messageFormat:(NSString *)format, ...
++ (void)log:(TCTLogType)type message:(NSString *)message
+{
+    if (logLevel & type) {
+        NSLog(@"[%@]: %@", tct_logTypeString(type), message);
+    }
+}
+
++ (void)log:(TCTLogType)type messageFormat:(NSString *)format, ...
 {
     va_list argList;
     va_start(argList, format);
     NSString *formatString = [[NSString alloc] initWithFormat:format arguments:argList];
     va_end(argList);
     
-    [TCTLogUtils log:level message:formatString];
+    [TCTLogUtils log:type message:formatString];
 }
 
-+ (void)log:(TCTLogLevel)level file:(const char *)f line:(int)l method:(const char *)m message:(NSString *)message
++ (void)log:(TCTLogType)type file:(const char *)f line:(int)l method:(const char *)m message:(NSString *)message
 {
-     NSLog(@"[%@] *%@:%d %s: %@", tct_logLevelString(level), tct_logShortPath(f), l, m, message);
+    if (logLevel & type) {
+        NSLog(@"[%@] *%@:%d %s: %@", tct_logTypeString(type), tct_logShortPath(f), l, m, message);
+    }
 }
 
-+ (void)log:(TCTLogLevel)level file:(const char *)f line:(int)l method:(const char *)m messageFormat:(NSString *)format, ...
++ (void)log:(TCTLogType)type file:(const char *)f line:(int)l method:(const char *)m messageFormat:(NSString *)format, ...
 {
     va_list argList;
     va_start(argList, format);
     NSString *formatString = [[NSString alloc] initWithFormat:format arguments:argList];
     va_end(argList);
     
-    [TCTLogUtils log:level file:f line:l method:m message:formatString];
+    [TCTLogUtils log:type file:f line:l method:m message:formatString];
 }
 
 
@@ -98,9 +109,9 @@ static inline NSString *tct_logShortPath(const char *path)
         NSString *formatString = [[NSString alloc] initWithFormat:format arguments:argList];
         va_end(argList);
 
-        [TCTLogUtils log:kTCTLogLevelError messageFormat:@"Assertion failed: %s", statement];
-        [TCTLogUtils log:kTCTLogLevelError file:f line:l method:m message:formatString];
-        [TCTLogUtils log:kTCTLogLevelError messageFormat:@"Callstack: %@", [NSThread callStackSymbols]];
+        [TCTLogUtils log:kTCTLogTypeError messageFormat:@"Assertion failed: %s", statement];
+        [TCTLogUtils log:kTCTLogTypeError file:f line:l method:m message:formatString];
+        [TCTLogUtils log:kTCTLogTypeError messageFormat:@"Callstack: %@", [NSThread callStackSymbols]];
     }
 }
 
@@ -120,7 +131,7 @@ static inline NSString *tct_logShortPath(const char *path)
             }
         }
         
-        [TCTLogUtils log:kTCTLogLevelError message:message];
+        [TCTLogUtils log:kTCTLogTypeError message:message];
     }
 }
 
