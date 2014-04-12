@@ -33,6 +33,7 @@
 		4CF892D918E3EF30008ECC99 /* UIKit+TCTAddtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+TCTAddtions.m"; sourceTree = "<group>"; };
 		4CF892DB18E3F2CB008ECC99 /* TCTLogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTLogUtils.h; sourceTree = "<group>"; };
 		4CF892DC18E3F2CB008ECC99 /* TCTLogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTLogUtils.m; sourceTree = "<group>"; };
+		EA4165CC18F962B4009B565C /* TCTMacroUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTMacroUtils.h; sourceTree = "<group>"; };
 		EA9DCBD118E0EB8200B6C099 /* libTCTDEVLIB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTCTDEVLIB.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9DCBD418E0EB8200B6C099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA9DCBD818E0EB8200B6C099 /* TCTDEVLIB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCTDEVLIB-Prefix.pch"; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				EA9DCBD718E0EB8200B6C099 /* Supporting Files */,
+				EA4165CC18F962B4009B565C /* TCTMacroUtils.h */,
 				4CF892DB18E3F2CB008ECC99 /* TCTLogUtils.h */,
 				4CF892DC18E3F2CB008ECC99 /* TCTLogUtils.m */,
 				4CF892D818E3EF30008ECC99 /* UIKit+TCTAddtions.h */,
