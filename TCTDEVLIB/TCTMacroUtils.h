@@ -29,3 +29,24 @@
 #define TCT_UNAVAILABLE
 #endif
 
+#if __has_attribute(nonnull)
+#define TCT_NON_NULL __attribute__((nonnull))
+#else
+#define TCT_NON_NULL
+#endif
+
+#define TCT_INVOKE_BLOCK(block, ...) \
+    do { \
+        if ((block)) { (block)(__VA_ARGS__); } \
+    } while(0)
+
+#define $(...) ([NSString stringWithFormat:__VA_ARGS__, nil]);
+
+#define TCT_ENCODE(value, key, type) ([aCoder encode##type:value forKey:key])
+#define __TCT_DECODE(key, type, suffix) ([aDecoder decode##type##suffix:key])
+#define TCT_DECODE(key, type) (__TCT_DECODE(key, type, ForKey))
+
+#define TCT_STRINGIFY(x) @#x
+#define TCT_P_ENCODE(x, type) TCT_ENCODE(x, TCT_STRINGIFY(x), type)
+#define TCT_P_DECODE(x, type) TCT_DECODE(TCT_STRINGIFY(x), type)
+
