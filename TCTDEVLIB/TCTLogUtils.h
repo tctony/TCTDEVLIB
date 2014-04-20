@@ -49,6 +49,9 @@ typedef NS_OPTIONS(NSInteger, TCTLogLevel) {
 #define TCT_D(format, ...) TCT_LOG(kTCTLogTypeDebug, (format), ##__VA_ARGS__)
 #define TCT_V(format, ...) TCT_LOG(kTCTLogTypeVerbose, (format), ##__VA_ARGS__)
 
+#define TCT_V_HELLO()      TCT_V(@"Hello!")
+#define TCT_V_GOODBYE()    TCT_V(@"Goodbye!")
+
 #if TCT_ENABLE_ASSERT
 #define TCT_ASSERT(condition, format, ...) [TCTLogUtils assert:(condition) statement:#condition file:__FILE__ line:__LINE__ method:__FUNCTION__ messageFormat:(format), ##__VA_ARGS__]
 #else
