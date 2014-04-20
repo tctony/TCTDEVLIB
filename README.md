@@ -1,3 +1,3 @@
 TCTDEVLIB
 =========
-TCTONY's ios dev lib.
+TCTONY's iOS dev lib.
