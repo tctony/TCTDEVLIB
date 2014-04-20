@@ -9,10 +9,29 @@
 /* Begin PBXBuildFile section */
 		4CF892DA18E3EF30008ECC99 /* UIKit+TCTAddtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF892D918E3EF30008ECC99 /* UIKit+TCTAddtions.m */; };
 		4CF892DD18E3F2CB008ECC99 /* TCTLogUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF892DC18E3F2CB008ECC99 /* TCTLogUtils.m */; };
+		EA3A95EF190364C500A7C0A6 /* libTCTDEVLIB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBD118E0EB8200B6C099 /* libTCTDEVLIB.a */; };
+		EA3A95F1190370E900A7C0A6 /* TCTUrlQueryStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3A95F0190370E900A7C0A6 /* TCTUrlQueryStringTest.m */; };
 		EA9DCBD518E0EB8200B6C099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBD418E0EB8200B6C099 /* Foundation.framework */; };
 		EA9DCBDA18E0EB8200B6C099 /* TCTDEVLIB.h in Copy Files */ = {isa = PBXBuildFile; fileRef = EA9DCBD918E0EB8200B6C099 /* TCTDEVLIB.h */; };
 		EA9DCBFF18E0EC6C00B6C099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */; };
+		EAC056D019009DE400901C53 /* Foundation+TCTAddtions.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC056CF19009DE400901C53 /* Foundation+TCTAddtions.m */; };
+		EAC056EF1902C7CD00901C53 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC056EE1902C7CD00901C53 /* XCTest.framework */; };
+		EAC056F01902C7CD00901C53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBD418E0EB8200B6C099 /* Foundation.framework */; };
+		EAC056F11902C7CD00901C53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */; };
+		EAC056F71902C7CD00901C53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAC056F51902C7CD00901C53 /* InfoPlist.strings */; };
+		EAC056F91902C7CD00901C53 /* TCTDEVLIB_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC056F81902C7CD00901C53 /* TCTDEVLIB_Tests.m */; };
+		EAC057011902C7CD00901C53 /* TCTBase64Test.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC057001902C7CD00901C53 /* TCTBase64Test.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAC056FB1902C7CD00901C53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA9DCBC918E0EB8200B6C099 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9DCBD018E0EB8200B6C099;
+			remoteInfo = TCTDEVLIB;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		EA9DCBCF18E0EB8200B6C099 /* Copy Files */ = {
@@ -33,12 +52,22 @@
 		4CF892D918E3EF30008ECC99 /* UIKit+TCTAddtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+TCTAddtions.m"; sourceTree = "<group>"; };
 		4CF892DB18E3F2CB008ECC99 /* TCTLogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTLogUtils.h; sourceTree = "<group>"; };
 		4CF892DC18E3F2CB008ECC99 /* TCTLogUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTLogUtils.m; sourceTree = "<group>"; };
+		EA3A95F0190370E900A7C0A6 /* TCTUrlQueryStringTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTUrlQueryStringTest.m; sourceTree = "<group>"; };
 		EA4165CC18F962B4009B565C /* TCTMacroUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTMacroUtils.h; sourceTree = "<group>"; };
 		EA9DCBD118E0EB8200B6C099 /* libTCTDEVLIB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTCTDEVLIB.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9DCBD418E0EB8200B6C099 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA9DCBD818E0EB8200B6C099 /* TCTDEVLIB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCTDEVLIB-Prefix.pch"; sourceTree = "<group>"; };
 		EA9DCBD918E0EB8200B6C099 /* TCTDEVLIB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCTDEVLIB.h; sourceTree = "<group>"; };
 		EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAC056CE19009DE400901C53 /* Foundation+TCTAddtions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+TCTAddtions.h"; sourceTree = "<group>"; };
+		EAC056CF19009DE400901C53 /* Foundation+TCTAddtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+TCTAddtions.m"; sourceTree = "<group>"; };
+		EAC056ED1902C7CD00901C53 /* TCTDEVLIB Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCTDEVLIB Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC056EE1902C7CD00901C53 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EAC056F41902C7CD00901C53 /* TCTDEVLIB Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TCTDEVLIB Tests-Info.plist"; sourceTree = "<group>"; };
+		EAC056F61902C7CD00901C53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAC056F81902C7CD00901C53 /* TCTDEVLIB_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCTDEVLIB_Tests.m; sourceTree = "<group>"; };
+		EAC056FA1902C7CD00901C53 /* TCTDEVLIB Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCTDEVLIB Tests-Prefix.pch"; sourceTree = "<group>"; };
+		EAC057001902C7CD00901C53 /* TCTBase64Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTBase64Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +80,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAC056EA1902C7CD00901C53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3A95EF190364C500A7C0A6 /* libTCTDEVLIB.a in Frameworks */,
+				EAC056EF1902C7CD00901C53 /* XCTest.framework in Frameworks */,
+				EAC056F11902C7CD00901C53 /* UIKit.framework in Frameworks */,
+				EAC056F01902C7CD00901C53 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				EA9DCBD618E0EB8200B6C099 /* TCTDEVLIB */,
+				EAC056F21902C7CD00901C53 /* TCTDEVLIB Tests */,
 				EA9DCBD318E0EB8200B6C099 /* Frameworks */,
 				EA9DCBD218E0EB8200B6C099 /* Products */,
 			);
@@ -67,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				EA9DCBD118E0EB8200B6C099 /* libTCTDEVLIB.a */,
+				EAC056ED1902C7CD00901C53 /* TCTDEVLIB Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +118,7 @@
 			children = (
 				EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */,
 				EA9DCBD418E0EB8200B6C099 /* Foundation.framework */,
+				EAC056EE1902C7CD00901C53 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,21 +126,36 @@
 		EA9DCBD618E0EB8200B6C099 /* TCTDEVLIB */ = {
 			isa = PBXGroup;
 			children = (
-				EA9DCBD718E0EB8200B6C099 /* Supporting Files */,
+				EA9DCBD818E0EB8200B6C099 /* TCTDEVLIB-Prefix.pch */,
+				EA9DCBD918E0EB8200B6C099 /* TCTDEVLIB.h */,
 				EA4165CC18F962B4009B565C /* TCTMacroUtils.h */,
 				4CF892DB18E3F2CB008ECC99 /* TCTLogUtils.h */,
 				4CF892DC18E3F2CB008ECC99 /* TCTLogUtils.m */,
 				4CF892D818E3EF30008ECC99 /* UIKit+TCTAddtions.h */,
 				4CF892D918E3EF30008ECC99 /* UIKit+TCTAddtions.m */,
+				EAC056CE19009DE400901C53 /* Foundation+TCTAddtions.h */,
+				EAC056CF19009DE400901C53 /* Foundation+TCTAddtions.m */,
 			);
 			path = TCTDEVLIB;
 			sourceTree = "<group>";
 		};
-		EA9DCBD718E0EB8200B6C099 /* Supporting Files */ = {
+		EAC056F21902C7CD00901C53 /* TCTDEVLIB Tests */ = {
 			isa = PBXGroup;
 			children = (
-				EA9DCBD918E0EB8200B6C099 /* TCTDEVLIB.h */,
-				EA9DCBD818E0EB8200B6C099 /* TCTDEVLIB-Prefix.pch */,
+				EAC056F31902C7CD00901C53 /* Supporting Files */,
+				EAC056F81902C7CD00901C53 /* TCTDEVLIB_Tests.m */,
+				EAC057001902C7CD00901C53 /* TCTBase64Test.m */,
+				EA3A95F0190370E900A7C0A6 /* TCTUrlQueryStringTest.m */,
+			);
+			path = "TCTDEVLIB Tests";
+			sourceTree = "<group>";
+		};
+		EAC056F31902C7CD00901C53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC056F41902C7CD00901C53 /* TCTDEVLIB Tests-Info.plist */,
+				EAC056F51902C7CD00901C53 /* InfoPlist.strings */,
+				EAC056FA1902C7CD00901C53 /* TCTDEVLIB Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,14 +180,37 @@
 			productReference = EA9DCBD118E0EB8200B6C099 /* libTCTDEVLIB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		EAC056EC1902C7CD00901C53 /* TCTDEVLIB Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC056FF1902C7CD00901C53 /* Build configuration list for PBXNativeTarget "TCTDEVLIB Tests" */;
+			buildPhases = (
+				EAC056E91902C7CD00901C53 /* Sources */,
+				EAC056EA1902C7CD00901C53 /* Frameworks */,
+				EAC056EB1902C7CD00901C53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC056FC1902C7CD00901C53 /* PBXTargetDependency */,
+			);
+			name = "TCTDEVLIB Tests";
+			productName = "TCTDEVLIB Tests";
+			productReference = EAC056ED1902C7CD00901C53 /* TCTDEVLIB Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EA9DCBC918E0EB8200B6C099 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = TCTONY;
+				TargetAttributes = {
+					EAC056EC1902C7CD00901C53 = {
+						TestTargetID = EA9DCBD018E0EB8200B6C099;
+					};
+				};
 			};
 			buildConfigurationList = EA9DCBCC18E0EB8200B6C099 /* Build configuration list for PBXProject "TCTDEVLIB" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -144,9 +225,21 @@
 			projectRoot = "";
 			targets = (
 				EA9DCBD018E0EB8200B6C099 /* TCTDEVLIB */,
+				EAC056EC1902C7CD00901C53 /* TCTDEVLIB Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAC056EB1902C7CD00901C53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC056F71902C7CD00901C53 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA9DCBCD18E0EB8200B6C099 /* Sources */ = {
@@ -154,11 +247,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF892DD18E3F2CB008ECC99 /* TCTLogUtils.m in Sources */,
+				EAC056D019009DE400901C53 /* Foundation+TCTAddtions.m in Sources */,
 				4CF892DA18E3EF30008ECC99 /* UIKit+TCTAddtions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAC056E91902C7CD00901C53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3A95F1190370E900A7C0A6 /* TCTUrlQueryStringTest.m in Sources */,
+				EAC057011902C7CD00901C53 /* TCTBase64Test.m in Sources */,
+				EAC056F91902C7CD00901C53 /* TCTDEVLIB_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAC056FC1902C7CD00901C53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA9DCBD018E0EB8200B6C099 /* TCTDEVLIB */;
+			targetProxy = EAC056FB1902C7CD00901C53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAC056F51902C7CD00901C53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC056F61902C7CD00901C53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EA9DCBF218E0EB8300B6C099 /* Debug */ = {
@@ -259,6 +382,60 @@
 			};
 			name = Release;
 		};
+		EAC056FD1902C7CD00901C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TCTDEVLIB Tests/TCTDEVLIB Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "TCTDEVLIB Tests/TCTDEVLIB Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EAC056FE1902C7CD00901C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TCTDEVLIB Tests/TCTDEVLIB Tests-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "TCTDEVLIB Tests/TCTDEVLIB Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +453,15 @@
 			buildConfigurations = (
 				EA9DCBF518E0EB8300B6C099 /* Debug */,
 				EA9DCBF618E0EB8300B6C099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC056FF1902C7CD00901C53 /* Build configuration list for PBXNativeTarget "TCTDEVLIB Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC056FD1902C7CD00901C53 /* Debug */,
+				EAC056FE1902C7CD00901C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

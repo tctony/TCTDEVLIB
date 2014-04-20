@@ -9,4 +9,4 @@
 #import <TCTDEVLIB/TCTMacroUtils.h>
 #import <TCTDEVLIB/TCTLogUtils.h>
 #import <TCTDEVLIB/UIKit+TCTAddtions.h>
-
+#import <TCTDEVLIB/Foundation+TCTAddtions.h>
