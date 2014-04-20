@@ -96,3 +96,6 @@
 #define TCT_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 #define TCT_SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define TCT_SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending
+
+#define TCT_DEVICE_IMAGE_NAME(image, suffix) ($(@"%@%@@2x%@", image, TCT_IS_IPHONE_5 ? @"-568h" : @"", suffix))
+#define TCT_DEVICE_IMAGE_NAME_PNG(image) (TCT_DEVICE_IMAGE_NAME(image, @".png"))
