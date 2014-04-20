@@ -7,6 +7,7 @@
 //
 
 #import "TCTLogUtils.h"
+#import "TCTMacroUtils.h"
 
 static inline NSString *tct_logTypeString(TCTLogType type)
 {
@@ -98,6 +99,7 @@ static TCTLogLevel logLevel = kTCTLogLevelVerbose;
         
         NSString *fullMessage = [[NSString alloc] initWithFormat:@"\n\tAssertion failed: %s\n\t*%@:%d %s, %@", statement, tct_logShortPath(f), l, m, formatString];
         NSAssert(condition, fullMessage);
+        TCT_UNUSED_VAR(fullMessage);
     }
 }
 
