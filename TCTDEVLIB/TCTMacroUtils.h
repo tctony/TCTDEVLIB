@@ -54,7 +54,7 @@
 
 #define TCT_UNUSED_VAR(x) (void)(x)
 
-#define $(...) ([NSString stringWithFormat:__VA_ARGS__, nil]);
+#define $(...) ([NSString stringWithFormat:__VA_ARGS__, nil])
 
 #define TCT_ENCODE(value, key, type) ([aCoder encode##type:value forKey:key])
 #define __TCT_DECODE(key, type, suffix) ([aDecoder decode##type##suffix:key])
