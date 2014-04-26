@@ -14,6 +14,8 @@
 		EA9DCBD518E0EB8200B6C099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBD418E0EB8200B6C099 /* Foundation.framework */; };
 		EA9DCBDA18E0EB8200B6C099 /* TCTDEVLIB.h in Copy Files */ = {isa = PBXBuildFile; fileRef = EA9DCBD918E0EB8200B6C099 /* TCTDEVLIB.h */; };
 		EA9DCBFF18E0EC6C00B6C099 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */; };
+		EABF6256190B5FD80089A2E8 /* TCTIntMap.mm in Sources */ = {isa = PBXBuildFile; fileRef = EABF6255190B5FD80089A2E8 /* TCTIntMap.mm */; };
+		EABF625A190B605E0089A2E8 /* TCTIntMapTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EABF6259190B605E0089A2E8 /* TCTIntMapTest.m */; };
 		EAC056D019009DE400901C53 /* Foundation+TCTAddtions.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC056CF19009DE400901C53 /* Foundation+TCTAddtions.m */; };
 		EAC056EF1902C7CD00901C53 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC056EE1902C7CD00901C53 /* XCTest.framework */; };
 		EAC056F01902C7CD00901C53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9DCBD418E0EB8200B6C099 /* Foundation.framework */; };
@@ -21,6 +23,7 @@
 		EAC056F71902C7CD00901C53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAC056F51902C7CD00901C53 /* InfoPlist.strings */; };
 		EAC056F91902C7CD00901C53 /* TCTDEVLIB_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC056F81902C7CD00901C53 /* TCTDEVLIB_Tests.m */; };
 		EAC057011902C7CD00901C53 /* TCTBase64Test.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC057001902C7CD00901C53 /* TCTBase64Test.m */; };
+		EAC2FC9C190BABE2003F40AE /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2FC9B190BABE2003F40AE /* libc++.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		EA9DCBD818E0EB8200B6C099 /* TCTDEVLIB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCTDEVLIB-Prefix.pch"; sourceTree = "<group>"; };
 		EA9DCBD918E0EB8200B6C099 /* TCTDEVLIB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCTDEVLIB.h; sourceTree = "<group>"; };
 		EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EABF6254190B5FD80089A2E8 /* TCTIntMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTIntMap.h; sourceTree = "<group>"; };
+		EABF6255190B5FD80089A2E8 /* TCTIntMap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TCTIntMap.mm; sourceTree = "<group>"; };
+		EABF6259190B605E0089A2E8 /* TCTIntMapTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTIntMapTest.m; sourceTree = "<group>"; };
 		EAC056CE19009DE400901C53 /* Foundation+TCTAddtions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+TCTAddtions.h"; sourceTree = "<group>"; };
 		EAC056CF19009DE400901C53 /* Foundation+TCTAddtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+TCTAddtions.m"; sourceTree = "<group>"; };
 		EAC056ED1902C7CD00901C53 /* TCTDEVLIB Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TCTDEVLIB Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +74,7 @@
 		EAC056F81902C7CD00901C53 /* TCTDEVLIB_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCTDEVLIB_Tests.m; sourceTree = "<group>"; };
 		EAC056FA1902C7CD00901C53 /* TCTDEVLIB Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCTDEVLIB Tests-Prefix.pch"; sourceTree = "<group>"; };
 		EAC057001902C7CD00901C53 /* TCTBase64Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTBase64Test.m; sourceTree = "<group>"; };
+		EAC2FC9B190BABE2003F40AE /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC2FC9C190BABE2003F40AE /* libc++.dylib in Frameworks */,
 				EA3A95EF190364C500A7C0A6 /* libTCTDEVLIB.a in Frameworks */,
 				EAC056EF1902C7CD00901C53 /* XCTest.framework in Frameworks */,
 				EAC056F11902C7CD00901C53 /* UIKit.framework in Frameworks */,
@@ -116,6 +124,7 @@
 		EA9DCBD318E0EB8200B6C099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAC2FC9B190BABE2003F40AE /* libc++.dylib */,
 				EA9DCBFE18E0EC6C00B6C099 /* UIKit.framework */,
 				EA9DCBD418E0EB8200B6C099 /* Foundation.framework */,
 				EAC056EE1902C7CD00901C53 /* XCTest.framework */,
@@ -135,6 +144,8 @@
 				4CF892D918E3EF30008ECC99 /* UIKit+TCTAddtions.m */,
 				EAC056CE19009DE400901C53 /* Foundation+TCTAddtions.h */,
 				EAC056CF19009DE400901C53 /* Foundation+TCTAddtions.m */,
+				EABF6254190B5FD80089A2E8 /* TCTIntMap.h */,
+				EABF6255190B5FD80089A2E8 /* TCTIntMap.mm */,
 			);
 			path = TCTDEVLIB;
 			sourceTree = "<group>";
@@ -146,6 +157,7 @@
 				EAC056F81902C7CD00901C53 /* TCTDEVLIB_Tests.m */,
 				EAC057001902C7CD00901C53 /* TCTBase64Test.m */,
 				EA3A95F0190370E900A7C0A6 /* TCTUrlQueryStringTest.m */,
+				EABF6259190B605E0089A2E8 /* TCTIntMapTest.m */,
 			);
 			path = "TCTDEVLIB Tests";
 			sourceTree = "<group>";
@@ -246,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EABF6256190B5FD80089A2E8 /* TCTIntMap.mm in Sources */,
 				4CF892DD18E3F2CB008ECC99 /* TCTLogUtils.m in Sources */,
 				EAC056D019009DE400901C53 /* Foundation+TCTAddtions.m in Sources */,
 				4CF892DA18E3EF30008ECC99 /* UIKit+TCTAddtions.m in Sources */,
@@ -258,6 +271,7 @@
 			files = (
 				EA3A95F1190370E900A7C0A6 /* TCTUrlQueryStringTest.m in Sources */,
 				EAC057011902C7CD00901C53 /* TCTBase64Test.m in Sources */,
+				EABF625A190B605E0089A2E8 /* TCTIntMapTest.m in Sources */,
 				EAC056F91902C7CD00901C53 /* TCTDEVLIB_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +374,7 @@
 				DSTROOT = /tmp/TCTDEVLIB.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCTDEVLIB/TCTDEVLIB-Prefix.pch";
+				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,6 +389,7 @@
 				DSTROOT = /tmp/TCTDEVLIB.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TCTDEVLIB/TCTDEVLIB-Prefix.pch";
+				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
