@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TCTDEVLIB"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "TCTONY's iOS dev lib."
 
   s.homepage     = "https://github.com/tctony/TCTDEVLIB"
